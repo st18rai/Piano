@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Piano</string>
+    <string name="do_txt">do</string>
+    <string name="re_txt">re</string>
+    <string name="mi_txt">mi</string>
+    <string name="fa_txt">fa</string>
+    <string name="sol_txt">sol</string>
+    <string name="la_txt">la</string>
+    <string name="si_txt">si</string>
+</resources>
