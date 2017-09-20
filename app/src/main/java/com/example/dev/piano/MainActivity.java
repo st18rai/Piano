@@ -115,9 +115,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     public void writeLog(String log) {
+
         // Get the directory for the user's public pictures directory.
         String path =
-                Environment.getExternalStorageDirectory() + File.separator  + "Piano";
+                Environment.getExternalStorageDirectory() + File.separator + "Piano";
         // Create the folder.
         File folder = new File(path);
         folder.mkdirs();
@@ -135,7 +136,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             file.createNewFile();
             FileOutputStream fOut = new FileOutputStream(file);
             OutputStreamWriter myOutWriter = new OutputStreamWriter(fOut);
-            myOutWriter.append(log);
+            myOutWriter.append(oldText + " " + log);
 
             myOutWriter.close();
 
